@@ -24,7 +24,7 @@ class PostController extends Controller
     	return view('posts.allposts',compact('posts'));
     }
     public function singlepost(post $post){
-    	$spost = post::find($post);
+    	$spost = post::find($post); // is jaga per koi issue ha 
     	return view('posts.singlepost',compact('spost'));
     }
 }
